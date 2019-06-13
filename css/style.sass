@@ -1,0 +1,251 @@
+body 
+    font: 
+        family: 'Open Sans', sans-serif
+
+h1, h2, h3, h4, h5 
+    color: hsl(243, 87%, 12%)
+    font: 
+        family: 'Raleway', sans-serif
+    
+nav 
+    padding: 0
+    width: 100%
+    &.bg-dark
+        background:
+            color: transparent!important
+
+button
+    &.btn
+        color: white
+    &.btn-success
+        background: 
+            color: hsl(163, 95%, 43%)
+
+header
+    background:
+            color: hsl(243, 87%, 12%)!important
+            image: linear-gradient(to right, hsl(243, 58%, 33%), hsl(243, 86%, 85%))
+    height: auto
+    margin:
+        bottom: 200px
+    position: relative
+    width: 100%    
+    &::after
+        background: 
+            color: inherit
+            image: inherit
+        bottom: 0
+        content: " "
+        height: 100%
+        left: 0
+        position: absolute
+        right: 0
+        top: 0
+        transform: skewY(4deg)
+            origin: top left
+        width: 100%
+        z-index: -1
+    .row
+        color: white 
+
+    .col-md-6
+        margin: 100px auto
+        &#title 
+            h3
+                color: white
+                font: 
+                    weight: 700
+                line-height: 2.75rem
+                width: 90%
+
+main 
+    .col-md-4
+        text: 
+            align: left
+    .col-md-6
+        p 
+            width: 90%
+    span 
+        font:
+            size: 20px
+            weight: 700
+    .row
+        &.contact         
+            width: 60%
+            p 
+                color: hsl(243, 58%, 33%) 
+            h2 
+                font: 
+                    weight: 700
+                margin: 
+                    bottom: 30px
+    #main-title 
+        font: 
+            weight: 700
+
+    form 
+        width: 80%
+        padding: 0
+        button 
+            width: 100%
+
+footer 
+    background:
+            color: hsl(243, 87%, 12%)!important
+    color: white
+    font: 
+        size: 0.9rem
+    height: auto
+    margin:
+        top: 200px
+    position: relative
+    width: 100% 
+    &::before 
+        background: 
+            color: inherit
+        bottom: 0
+        content: " "
+        height: 100%
+        left: 0
+        position: absolute
+        right: 0
+        top: 0
+        transform: skewY(4deg)
+            origin: top right
+        width: 100%
+        z-index: -1
+
+    .container 
+        margin: 100px auto
+
+    .row 
+        margin:
+            left: 0
+            right: 0   
+
+    ul 
+        list-style: none
+        margin: 
+            right: 0
+        padding: 0
+        background: none!important
+
+        .list-group-item
+            background: none!important
+            border: none
+
+    .list-group-item
+        padding: .35rem 1rem!important
+               
+    .col-md-3 
+        padding: 0
+        margin-right: -20px
+        .logo-img 
+            margin: 
+                bottom: 30px
+            width: 40%
+        
+    .col-md-5
+        padding: 
+            left: 0
+            right: 0
+     
+        .row 
+            padding: 
+                left: 15px
+            .col-md-4
+                padding: 0!important
+              
+        p 
+            font:
+                size: 1.1rem
+                weight: 600
+    form 
+        button 
+            width: 50%
+        input 
+            width: 100%
+
+@media only screen and (min-width: 768px)               
+    footer 
+        .col-md-5
+            border: 
+                left:  1px solid white
+                right: 1px solid white
+
+        .col-md-3 
+            .logo-img 
+                width: 70%
+
+    
+@media only screen and (max-width: 768px)
+    footer > .container 
+        margin:
+            left: auto
+            right: auto 
+        width: 90% 
+    header 
+        background:
+            color: hsl(243, 87%, 12%)!important
+            image: linear-gradient(to bottom, hsl(243, 58%, 33%), hsl(243, 86%, 85%))
+        .col-md-6
+            &#title 
+                order: 2
+                text-align: center
+                margin: 
+                    bottom: 100px
+                    top: 50px
+                h3 
+                    margin: 0 auto
+            form 
+               justify-content: center
+        #header-image 
+            margin: 
+                bottom: 0
+                top: 80px
+            order: 1
+
+    main
+        .container 
+            #main-title
+                line-height: 3rem
+                width: 70%!important
+        .row
+            &.contact
+                width: 100%
+                p 
+                    margin:
+                        left: auto
+                        right: auto 
+                    width: 80%
+        form 
+            width: 80%
+        
+        .col-md-6
+            p 
+                width: 100%
+
+    footer 
+        .container 
+            margin: 
+                bottom: 0
+            .col-md-3 
+                order: 1  
+                padding: 
+                    left: 16px 
+                    right: 16px 
+            .col-md-5 
+                order: 3
+            .col-md-4
+                margin: 
+                    bottom: 60px
+                    top: 60px
+                order: 2
+                .row 
+                    text-align: center
+                    padding: 
+                        left: 16px 
+                        right: 16px 
+          
+    
+  
